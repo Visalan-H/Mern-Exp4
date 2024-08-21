@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Rajdhani';
+}
+
+nav {
+    padding: 2% 3%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: aquamarine;
+    font-size: 1.5rem;
+}
+
+.nav-links a {
+    margin-left: 10px;
+    color: aquamarine;
+    font-size: 1.2rem;
+}
+
+#first {
+    color: aquamarine;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 3% 5%;
+    background-color: aquamarine;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card {
+    text-align: center;    
+    width: 25%;
+    height: fit-content;
+    opacity: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, font-size 0.3s;
+}
+.card:hover{
+    transform: Rotate(3deg) scale(1.05);
+    transition: transform 0.3s, font-size 0.2s;
+    font-size: large;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    margin-bottom: 15px;
+}
+
+.card>*:not(.read) {
+    margin-bottom: 50px;
+}
+
+.read {
+    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+    background-color: #000;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.read a {
+    color: aquamarine;
+}
+
+.title {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    color: aquamarine;
+    background-color: #000;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.second {
+    padding: 3% 5%;
+    background-color: #000;
+    color: aquamarine;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left,
+.right {
+    border: aquamarine solid 2px;
+    border-radius: 10px;
+    width: 30%;
+    height: max-content;
+    padding: 1%;
+}
+
+.left h2 {
+    margin-bottom: 50px;
+}
+
+img {
+    width: 100%;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.3s;
+}
+
+.second button {
+    margin-top: 10px;
+    width: 30%;
+    padding: 2%;
+    background-color: aquamarine;
+    color: #000;
+    border: aquamarine 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.second button:hover {
+    background-color: #000;
+    color: aquamarine;
+    transform: scale(0.95);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.second button:active {
+    transform: scale(0.90);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.blog img {
+    width: 50%;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.3s;
+}
+.blog img:hover,.left img:hover {
+    opacity: 40%;
+    transition: opacity 0.3s;
+}
+
+.blog {
+    margin-bottom: 20px;
+}
+
+.right {
+    padding: 1%;
+}
+
+.right>.title2 {
+    margin-bottom: 50px;
+}
+
+.blog button {
+    margin-bottom: 10px;
+}
+.last{
+    width: 100%;
+    padding:3% 5%;
+    color: #000;
+    background-color: aquamarine;
+    text-align: center;
+}
+.sub{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+    .last>*{
+        margin-bottom: 20px;
+    }
+.left2,.right2{
+    height:max-content;
+    border: #000 solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image2{
+    display: flex;
+}
+.imgdet{
+    width: 30%;    
+    font-size: 90%;
+}
+
+.last button {
+    margin-top: 10px;
+    width: 80%;
+    height: 40px;
+    padding: 2%;
+    background-color: #000;
+    color: aquamarine;
+    border: black 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.last button:hover {
+    background-color: aquamarine;
+    color: #000;
+    transform: scale(0.95);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+.last button:active {
+    transform: scale(0.90);
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+.footer{
+    background-color: #000;
+    color: aquamarine;
+}
