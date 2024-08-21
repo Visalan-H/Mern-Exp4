@@ -67,11 +67,10 @@ nav {
     font-size: large;
 }
 
-.card ul {
+ul {
     list-style: none;
 }
-
-.card ul li {
+ ul li {
     margin-bottom: 15px;
 }
 
@@ -89,7 +88,7 @@ nav {
     justify-content: center;
 }
 
-.read a {
+a {
     color: aquamarine;
 }
 
@@ -134,10 +133,10 @@ img {
     transition: opacity 0.3s;
 }
 
-.second button {
+.second button,.touch button {
     margin-top: 10px;
     width: 30%;
-    padding: 2%;
+    padding: 2.5%;
     background-color: aquamarine;
     color: #000;
     border: aquamarine 1px solid;
@@ -146,15 +145,15 @@ img {
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-.second button:hover {
+.second button:hover, .touch button:hover{
     background-color: #000;
     color: aquamarine;
-    transform: scale(0.95);
+    transform: scale(0.9);
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-.second button:active {
-    transform: scale(0.90);
+.second button:active, .touch button:active{
+    transform: scale(0.8);
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
@@ -184,7 +183,7 @@ img {
 .blog button {
     margin-bottom: 10px;
 }
-.last{
+.last2{
     width: 100%;
     padding:3% 5%;
     color: #000;
@@ -196,17 +195,20 @@ img {
     align-items: center;
     justify-content: space-around;
 }
-    .last>*{
+    .last2>*{
         margin-bottom: 20px;
     }
 .left2,.right2{
     height:max-content;
     border: #000 solid 1px;
     display: flex;
+    border-radius: 10px;
     align-items: center;
     justify-content: space-between;
 }
-
+.image2 img{
+    border-radius: 10px 0 0 10px;
+}
 .image2{
     display: flex;
 }
@@ -215,7 +217,7 @@ img {
     font-size: 90%;
 }
 
-.last button {
+.last2 button {
     margin-top: 10px;
     width: 80%;
     height: 40px;
@@ -228,18 +230,68 @@ img {
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-.last button:hover {
+.last2 button:hover {
     background-color: aquamarine;
     color: #000;
     transform: scale(0.95);
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
 
-.last button:active {
+.last2 button:active {
     transform: scale(0.90);
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
 }
-.footer{
+.last{
     background-color: #000;
     color: aquamarine;
+    padding: 3% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
+.last .details{
+    width: 30%;
+    border: 1px solid aquamarine;
+    border-radius: 10px;
+    padding: 1%;
+}
+.details>*:not(.details h3){
+    margin-top: 30px;
+}
+#street::before{
+    content: "📍 ";
+}
+#phone::before{
+    content: "🤙🏻 ";
+}
+#mail::before{
+    content: "💌 ";
+}
+.flinks,.touch{
+    width: 20%;
+    border: 1px solid aquamarine;
+    padding: 1%;
+    border-radius: 10px;
+}
+.flinks>*:not(.flinks h3){
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.touch>*:not(.touch h3){
+    margin-top: 30px;
+}
+.touch input{
+    padding: 2%;
+    border: 1px solid aquamarine;
+    border-radius: 5px;
+    outline: 0;
+    background-color: #000;
+    font-size: 100%;
+}
+.touch input::placeholder{
+    color: rgba(127, 255, 212, 0.704);
+}
+.touch>*{
+    margin-bottom: 15px;
+}
+
