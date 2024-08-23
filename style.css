@@ -113,19 +113,24 @@ a {
     justify-content: space-around;
 }
 
-.left,
-.right {
+.left,.right {
     border: aquamarine solid 2px;
     border-radius: 10px;
-    width: 30%;
-    height: max-content;
+    width: 40%;
     padding: 1%;
+    min-height: fit-content;
+    height: 600px;
+}
+.left p{
+    margin-bottom: 10px;
 }
 
-.left h2 {
+.left h2{
     margin-bottom: 50px;
 }
-
+.imgfoot>*{
+    margin-top: 20px;
+}
 img {
     width: 100%;
     cursor: pointer;
@@ -159,6 +164,7 @@ img {
 
 .blog img {
     width: 50%;
+    height: 100%;
     cursor: pointer;
     opacity: 100%;
     transition: opacity 0.3s;
@@ -169,8 +175,11 @@ img {
 }
 
 .blog {
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+.blog 
+
 
 .right {
     padding: 1%;
@@ -180,9 +189,6 @@ img {
     margin-bottom: 50px;
 }
 
-.blog button {
-    margin-bottom: 10px;
-}
 .last2{
     width: 100%;
     padding:3% 5%;
@@ -334,3 +340,21 @@ footer h4{
 .touch{
     width: max-content;
 }
+.blog{
+    display: flex;
+    height: max-content;
+}
+.imgdet2{
+    width: 50%;
+    padding: 1%;    
+}
+.blog button,.image button{
+    width: 100%;
+}
+.right button{
+    margin-top: 20%;
+}
+.last>*{
+    height: fit-content;
+}
+
